@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .navbar ul li {
+            font-family: century, sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 25px;
+            transition: all 0.5s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: white;
+            color: black;
+            box-shadow: 0 0 10px white;
+        }
+
+        /* Home Section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 860px;
+            color: white;
+            position: relative;
+        }
+
+        #home:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url("mypicture1.jpg") no-repeat center center/cover;
+            height: 800px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home img {
+            width: 100%; 
+            max-width: 200px;
+            height: auto; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .heading {
+            font-family: century, sans-serif;
+            font-size: 3rem;
+            margin: 40px 0;
+        }
+
+        /* About Section */
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            box-sizing: border-box;
+            padding: 20px;
+            margin-bottom: 50px;
+            text-align: center; /* Center text inside */
+        }
+
+        #about img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            box-sizing: border-box;
+        }
+
+        .gallery img {
+            max-width: 340px;
+            width: 250%;
+            height: 50;
+            margin: 10px;
+        }
+
+        /* Education Section */
+        #education {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: auto;
+            border: 1px solid black;
+            margin: 10px;
+            align-items: center;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 15px;
+            background: linear-gradient(to top, rgb(225, 45, 45) 50%, white 50%);
+            background-size: 100% 200%;
+            transition: all 0.8s;
+        }
+
+        /* Contact Section */
+        #contact {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <img src="home 1.jpg" alt="home">
+            <h1 class="heading">I AM <br> AIENNA NAJIHAH</h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="pic">
+            <h2 class="headings">About Me</h2>
+            <img src="gallery/aienna.jpg" alt="About Me">
+            <div id="intro">
+                <h3>AIENNA NAJIHAH</h3>
+                <p>Hi, my name is Tuan Nur Aienna Najihah Binti Tuan Rozlan. I am 20 years old.
+                I am a student at Universiti Teknologi MARA. 
+                This is my final year in UiTM. My hobbiest is taking pictures of the sky, sea, views, and more.
+                I am excited to be a part of this program, IMD318. I enjoy learning how to create a website, and I will use this knowledge in the future.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="headings">Portfolio</h2>
+        <div class="gallery">
+            <img src="gallery/portfolio 1.jpg" alt="Sample from Portfolio 1">
+            <img src="gallery/portfolio 2.jpg" alt="Sample from Portfolio 2">
+            <img src="gallery/portfolio 3.jpg" alt="Sample from Portfolio 3">
+            <img src="gallery/portfolio 4.jpg" alt="Sample from Portfolio 4">
+            <img src="gallery/portfolio 5.jpg" alt="Sample from Portfolio 5">
+            <img src="gallery/portfolio 6.jpg" alt="Sample from Portfolio 6">
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="headings">Education</h2>
+        <div class="row">
+            <div class="box">
+                <img src="gallery/education 1.jpg" alt="SK Demit 2 School">
+                <h3>SK Demit 2</h3>
+                <p>I went to school at SK Demit 2 from the age of 6 until 12. This is where I started to excel at reading and counting.</p>
+            </div>
+            <div class="box">
+                <img src="gallery/education 2.jpg" alt="SMK Kubang Kerian 3 School">
+                <h3>SMK Kubang Kerian 3</h3>
+                <p>I continued my studies at SMK Kubang Kerian 3 in 2018 and completed my studies with an SPM certificate at that school.</p>
+            </div>
+            <div class="box">
+                <img src="gallery/education 3.jpg" alt="Universiti Teknologi MARA">
+                <h3>Universiti Teknologi MARA</h3>
+                <p>After receiving my SPM results, I was offered a place at Universiti Teknologi MARA in December 2022. Here, I learned many new things, including website development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="headings">Contact</h2>
+        <form action="#" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter your name">
+            <input type="email" name="email" class="input" placeholder="Enter your email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+</body>
+</html>
